@@ -3,7 +3,7 @@ with your application.
 
 ## Routing
 
-#### Log router transitions
+### Log router transitions
 
 ```javascript {data-filename=app/app.js}
 import Application from '@ember/application';
@@ -19,21 +19,10 @@ export default Application.extend({
   LOG_TRANSITIONS_INTERNAL: true
 });
 ```
-## Views / Templates
-
-#### Log view lookups
-
-```javascript {data-filename=config/environment.js}
-ENV.APP.LOG_VIEW_LOOKUPS = true;
-```
-#### View all registered templates
-```javascript
-Ember.keys(Ember.TEMPLATES)
-```
 
 ## Controllers
 
-#### Log generated controller
+### Log generated controller
 
 ```javascript {data-filename=config/environment.js}
 ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -41,7 +30,7 @@ ENV.APP.LOG_ACTIVE_GENERATION = true;
 
 ## Observers / Binding
 
-#### See all observers for an object, key
+### See all observers for an object, key
 
 ```javascript
 Ember.observersFor(comments, keyName);
